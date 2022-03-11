@@ -61,7 +61,7 @@ def applyDiscount(total):
     discounted_total = total - discount
     return discounted_total
 
-
+## A check to make sure payments less than 5$ will not be allowed on a card
 def checkPaymentMethod(total):
     while total < 5.0:
         choice = (input("\nWill you be using cash or card?\n")).upper()
@@ -121,4 +121,10 @@ def process():
 
 process()
 
-# Tell them to type in a menu item 
+"""
+Improvements:
+1. Update the quantity when items are added or subtacted from the list
+2. Mystery Item would not be shown untill after user paid for items
+3. Have a rewards program so users can scan their barcode
+4. Refactor the elifs for the choices for the orders
+"""
